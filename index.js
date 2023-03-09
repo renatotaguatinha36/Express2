@@ -20,13 +20,15 @@ app.post('/usuarios', (req, res)=>{
      let nome = req.body.nome;
      let email = req.body.email;
      let idade = req.body.idade;
-     let job = req.body.job
+     let job = req.body.job;
+     let status = req.body.status
      return res.json({
          
          nome: nome,
          email: email,
          idade: idade,
-         job: job
+         job: job,
+         status: status
 
      });
 
