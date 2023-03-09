@@ -15,12 +15,18 @@ res.status(200).send("<h3>Rotas no Express na porta 3001</h3><p>Rota '/'")
 
 
 app.post('/usuarios', (req, res)=>{
- 
+     
+
+     let nome = req.body.nome;
+     let email = req.body.email;
+     let idade = req.body.idade;
+     let job = req.body.job
      return res.json({
-      
-         nome: "RENATO ALVES SOARES",
-         email: "renatoguara2020@gmail.com",
-         idade: 51
+         
+         nome: nome,
+         email: email,
+         idade: idade,
+         job: job
 
      });
 
